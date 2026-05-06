@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+
+  /* soft gradient background */
+  background: linear-gradient(135deg, #0f172a, #111c3a, #0b1224);
+  color: white;
+}
+
+/* MAIN APP CENTER */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* HERO SECTION (glass effect) */
+.hero {
+  width: 100%;
+  text-align: center;
+  padding: 25px 15px;
+
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(10px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* LOGO */
+.logo {
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 15px;
+
+  background: linear-gradient(90deg, #60a5fa, #22c55e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* CATEGORY BUTTONS */
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.cat {
+  padding: 9px 16px;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 25px;
+
+  background: rgba(255,255,255,0.05);
+  color: #e2e8f0;
+
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.cat:hover {
+  background: rgba(255,255,255,0.12);
+  transform: translateY(-2px);
+}
+
+.cat.active {
+  background: linear-gradient(135deg, #3b82f6, #22c55e);
+  color: white;
+  border: none;
+}
+
+/* CENTER AREA */
+.center {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 700px;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* JOKE AREA */
+.jokeBox {
+  margin: 40px 0;
+}
+
+/* SETUP TEXT */
+.setup {
+  font-size: 30px;
+  color: #e2e8f0;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* PUNCHLINE */
+.punchline {
+  font-size: 36px;
+  font-weight: 700;
+
+  color: #34d399;
+
+  line-height: 1.6;
+  text-shadow: 0px 0px 15px rgba(52, 211, 153, 0.2);
+}
+
+/* BUTTON */
+.btn {
+  padding: 14px 30px;
+  font-size: 18px;
+
+  border: none;
+  border-radius: 12px;
+
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: white;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 10px 25px rgba(59,130,246,0.25);
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(59,130,246,0.35);
+}
+
+/* LOADER */
+.loader {
+  font-size: 18px;
+  color: #94a3b8;
+}
+
+/* ERROR */
+.error {
+  color: #f59e0b;
+  margin-bottom: 10px;
+}
